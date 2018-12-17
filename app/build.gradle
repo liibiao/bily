@@ -29,8 +29,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation(name: 'commonview-debug', ext: 'aar')
-    implementation 'client:domain:1.1.46@jar'
-    implementation 'client:rxbus:3.0.5@jar'
+    //implementation 'client:domain:1.1.46@jar'
+//    implementation 'client:rxbus:3.0.5@jar'
     //状态栏修改库
     compile 'com.gyf.barlibrary:barlibrary:2.3.0'
 }

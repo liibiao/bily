@@ -20,9 +20,9 @@ allprojects {
         maven {
             url 'https://dl.bintray.com/zouyuhan/maven'
         }
-        maven {
-            url "http://application.jy.com:8084/repository/Android/"
-        }
+//        maven {
+//            url "http://application.jy.com:8084/repository/Android/"
+//        }
         google()
         jcenter()
 
