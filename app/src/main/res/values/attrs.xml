@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="TintEditLayout">
+        <attr name="edit_type">
+            <enum name="DEFAULT_TYPE" value="0" />
+            <enum name="EDIT_TYPE" value="1" />
+            <enum name="ERROR_TYPE" value="2" />
+        </attr>
+        <attr name="def_color" format="reference|color" />
+        <attr name="edit_color" format="reference|color" />
+        <attr name="error_color" format="reference|color" />
+        <attr name="title_color" format="reference|color" />
+        <attr name="title_size" format="dimension" />
+        <attr name="line_height" format="dimension" />
+        <attr name="line_color" format="reference|color"/>
+        <attr name="content_size" format="dimension" />
+        <attr name="title_text" format="string" />
+        <attr name="text_content_hint" format="string" />
+        <attr name="edit_padding_top" format="dimension" />
+        <attr name="error_padding_top" format="dimension" />
+        <attr name="error_size" format="dimension" />
+        <attr name="error_visiable" format="boolean" />
+        <attr name="title_visiable" format="boolean" />
+        <attr name="edit_input_type" format="string"/>
+        <attr name="drawable_left" format="reference|color" />
+        <attr name="drawable_left_padding" format="dimension"/>
+        <attr name="max_length" format="integer"/>
+        <attr name="max_lines" format="integer"/>
+        <attr name="def_error_text" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="LoadingButton">
+        <attr name="enable_bg" format="reference" />
+        <attr name="disable_bg" format="reference" />
+        <attr name="button_text_size" format="dimension" />
+        <attr name="button_text_color" format="reference|color" />
+        <attr name="loading_src" format="reference" />
+        <attr name="button_text" format="string" />
+        <attr name="button_padding_top" format="dimension" />
+        <attr name="button_padding_bottom" format="dimension" />
+        <attr name="button_bg" format="reference|color" />
+        <attr name="enable" format="boolean"/>
+    </declare-styleable>
+
+</resources>

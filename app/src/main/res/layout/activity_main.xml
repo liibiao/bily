@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取设备id"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/deviceId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"/>
+
+
+    <com.example.bilyli.myapplication.TintEditLayout
+        android:id="@+id/edit_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:def_color="@color/gray"
+        app:error_color="@color/colorAccent"
+        app:edit_color="@color/colorPrimary"
+        app:edit_input_type="phone"
+        app:title_text="标题"
+        app:text_content_hint="姓名"
+        app:drawable_left="@mipmap/ic_launcher"
+        app:drawable_left_padding="5dp"
+        />
+
+    <com.example.bilyli.myapplication.TintEditLayout
+        android:id="@+id/edit_layout2"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:def_color="@color/gray"
+        app:error_color="@color/colorAccent"
+        app:edit_color="@color/colorPrimary"
+        app:edit_input_type="text"
+        app:title_text="标题2"
+        app:text_content_hint="姓名2"
+        app:error_visiable="true"
+        app:title_visiable="true"
+        app:error_padding_top="10dp"
+        app:edit_padding_top="10dp"
+        app:max_length="10"
+        app:max_lines="1"
+        app:line_height="5dp"
+        app:def_error_text="错误默认"
+        />
+
+    <com.example.bilyli.myapplication.LoadingButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:button_text="登录"
+        app:enable="true"
+        app:button_text_color="#ffffff"
+        app:enable_bg="@drawable/btn_bg"
+        app:button_text_size="14sp"
+        app:disable_bg="@drawable/disable_btn_bg"/>
+
+
+</LinearLayout>

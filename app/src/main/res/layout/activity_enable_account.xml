@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/common_set_white" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/a_navbar_back" />
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="17sp"
+                android:textColor="@color/message_title"
+                android:text="@string/account_title" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/common_color_divide"/>
+
+        <TextView
+            android:id="@+id/desc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:text="@string/account_desc" />
+
+        <com.gw.common.view.TintEditLayout
+            android:id="@+id/name_edit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:title_size="11sp"
+            app:title_color="@color/message_desc"
+            app:content_size="14sp"
+            app:error_size="11sp"
+            app:def_color="@color/edit_hint"
+            app:edit_color="@color/account_theme_color"
+            app:line_color="@color/edit_line"
+            app:content_color="@color/common_set_text_black"
+            app:disable_color="@color/edit_line"
+            app:textCursorDrawable="@drawable/edit_cursor_line"
+            app:edit_input_type="text"
+            app:error_color="@color/pwd_level1"
+            app:edit_padding_top="-4dp"
+            app:line_padding_top="-4dp"
+            app:error_visiable="false"
+            app:line_height="1dp"
+            app:max_length="50"
+            app:max_lines="1"
+            app:text_content_hint="@string/account_real_name"
+            app:title_text="@string/account_real_name"
+            app:def_error_text="@string/real_name_not_null"
+            app:title_visiable="false" />
+
+        <com.gw.common.view.TintEditLayout
+            android:id="@+id/idcard_edit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:title_color="@color/message_desc"
+            app:title_size="11sp"
+            app:content_size="14sp"
+            app:error_size="11sp"
+            app:def_color="@color/edit_hint"
+            app:edit_color="@color/account_theme_color"
+            app:content_color="@color/common_set_text_black"
+            app:disable_color="@color/edit_line"
+            app:edit_input_type="number"
+            app:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+            app:line_color="@color/edit_line"
+            app:textCursorDrawable="@drawable/edit_cursor_line"
+            app:error_color="@color/pwd_level1"
+            app:edit_padding_top="-4dp"
+            app:line_padding_top="-4dp"
+            app:error_visiable="false"
+            app:line_height="1dp"
+            app:max_length="50"
+            app:max_lines="1"
+            app:text_content_hint="@string/account_id_card"
+            app:title_text="@string/account_id_card"
+            app:def_error_text="@string/idcard_not_null"
+            app:title_visiable="false" />
+
+        <com.gw.common.view.TintEditLayout
+            android:id="@+id/email_edit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:title_size="11sp"
+            app:content_size="14sp"
+            app:error_size="11sp"
+            app:title_color="@color/message_desc"
+            app:def_color="@color/edit_hint"
+            app:edit_color="@color/account_theme_color"
+            app:content_color="@color/common_set_text_black"
+            app:disable_color="@color/edit_line"
+            app:edit_input_type="textEmailAddress"
+            app:line_color="@color/edit_line"
+            app:textCursorDrawable="@drawable/edit_cursor_line"
+            app:error_color="@color/pwd_level1"
+            app:edit_padding_top="-4dp"
+            app:line_padding_top="-4dp"
+            app:error_visiable="false"
+            app:line_height="1dp"
+            app:max_length="50"
+            app:max_lines="1"
+            app:text_content_hint="@string/account_email_desc"
+            app:title_text="@string/account_email_title"
+            app:def_error_text="@string/email_not_null"
+            app:title_visiable="false" />
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.gw.common.view.TintEditLayout
+                android:id="@+id/code_edit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:title_size="11sp"
+                app:content_size="14sp"
+                app:error_size="11sp"
+                app:title_color="@color/message_desc"
+                app:def_color="@color/edit_hint"
+                app:edit_color="@color/account_theme_color"
+                app:line_color="@color/edit_line"
+                app:content_color="@color/common_set_text_black"
+                app:disable_color="@color/edit_line"
+                app:textCursorDrawable="@drawable/edit_cursor_line"
+                app:edit_input_type="number"
+                app:error_color="@color/pwd_level1"
+                app:edit_padding_top="-4dp"
+                app:line_padding_top="-4dp"
+                app:error_visiable="false"
+                app:line_height="1dp"
+                app:max_length="50"
+                app:max_lines="1"
+                app:text_content_hint="@string/account_verification_code"
+                app:title_text="@string/account_verification_code"
+                app:def_error_text="@string/verification_code_not_null"
+                app:title_visiable="false" />
+
+            <TextView
+                android:id="@+id/get_code_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/account_theme_color"
+                android:text="@string/get_verification_code"/>
+        </RelativeLayout>
+
+        <com.gw.common.view.LoadingButton
+            android:id="@+id/confirm_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:button_padding_bottom="30dp"
+            app:button_padding_top="30dp"
+            app:button_text="确定"
+            app:enable="false"
+            app:button_text_color="#ffffff"
+            app:enable_bg="@drawable/login_bt_bg"
+            app:button_text_size="16sp"
+            app:disable_bg="@drawable/login_disable_bt_bg"/>
+    </LinearLayout>
+</ScrollView>

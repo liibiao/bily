@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CreateDeviceId</string>
+    <!--激活账户-->
+    <string name="account_title">激活账户</string>
+    <string name="account_real_name">真实姓名</string>
+    <string name="account_id_card">身份证件号码</string>
+    <string name="account_email_desc">常用邮箱，重要的交易信息将发送至此邮箱</string>
+    <string name="account_email_title">常用邮箱</string>
+    <string name="account_verification_code">短信验证码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="get_verification_code_again">重新获取(%1$d)</string>
+    <string name="account_desc">为保障账号资金安全，激活前请验证⾝份，并完善以下资料（验证码将发送至%3$s）。</string>
+    <string name="verification_code_not_null">验证码不能为空</string>
+    <string name="real_name_not_null">请输入真实姓名</string>
+    <string name="idcard_not_null">请输入身份证号码</string>
+    <string name="email_not_null">请输入邮箱</string>
+
+    <string name="commit_success_tip">我们将尽快完成资料审核，如需加快进度请联系客服。</string>
+    <string name="commit_success_tip2">继续存款，即可完成账户激活，进行真实交易。</string>
+    <string name="commit_success">提交成功</string>
+    <string name="change_real_btn">切换为真实</string>
+    <string name="deposit_again">继续存款</string>
+    <string name="connect_service">联系客服</string>
+    <string name="common_dialog_sure">确定</string>
+</resources>

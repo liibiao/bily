@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="translu">#00000000</color>
+
+    <color name="gray">#00abAf</color>
+
+    <color name="common_set_text_black">#FF31343A</color>
+    <color name="common_set_white">#FFFFFFFF</color>
+    <color name="color_item_pressed">#FFD8D8D8</color>
+    <color name="divider_line">#1A000000</color>
+    <color name="act_bg"> #FFF4F4F4</color>
+    <color name="pwd_level0">#FFD7D9DE</color>
+    <color name="pwd_level1">#FFFF3B30</color>
+    <color name="pwd_level2">#FFFCCA38</color>
+    <color name="pwd_level3">#FF32BE89</color>
+    <color name="theme_blue_color">#FF638CFB</color>
+    <color name="common_color_divide">
+        #FFD9D9D9
+    </color>
+    <color name="tv_tip_gray">#8A4A505A</color>
+    <color name="message_desc">#FF9197A3</color>
+    <color name="message_desc_read">#7F9197A3</color>
+    <color name="message_title">#FF31343A</color>
+    <color name="message_title_read">#7F31343A</color>
+    <color name="message_type_notice">#FF7D828E</color>
+    <color name="message_type_notice_read">#7F7D828E</color>
+
+    <color name="main_background">#F4F4F4</color>
+    <color name="home_text_color_2">#808080</color>
+    <!--提示文字色及行情中文字-->
+    <color name="color_c">#666666</color>
+
+    <!--激活账户-->
+    <color name="text_desc">#FF999FAA</color>
+    <color name="edit_hint">#FFC2C5CC</color>
+    <color name="edit_line">#FFE4E4E4</color>
+    <color name="account_theme_color">#FF6371FB</color>
+</resources>
