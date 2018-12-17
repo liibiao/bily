@@ -18,7 +18,35 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug{}
+
     }
+    flavorDimensions "api"
+    productFlavors{
+        xiaomi{
+            dimension "api"
+            applicationId "com.xiaomi.test"
+        }
+        huawei{
+            dimension "api"
+            applicationId "com.huawei.test"
+        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            if (IS_JENKINS) {
+                outputFileName = 'AutoBuildTest-v' + APP_VERSION + '-' + variant.productFlavors[0].name + '-' + variant.buildType.name + '.apk'
+            } else {
+                if ('debug'.equals(variant.buildType.name)) {
+                    outputFileName = "AutoBuildTest-v${APP_VERSION}-debug.apk"
+                } else {
+                    //AutoBuildTest-v1.0.1-xiaomi-release.apk
+                    outputFileName = 'AutoBuildTest-v' + APP_VERSION + '-' + variant.productFlavors[0].name + '-' + variant.buildType.name + '.apk'
+                }
+            }
+        }
+    }
+
 }
 
 dependencies {
